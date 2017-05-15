@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::resource('home', 'HomeController@index');
+Route::resource('approved', 'ApproveController');
+Route::resource('api/v1/booking', 'BookingApiController');

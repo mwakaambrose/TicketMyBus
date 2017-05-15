@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Booking;
 
 class HomeController extends Controller
 {
@@ -24,6 +25,22 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $bookings = Booking::where('is_approved', 0)->get();
+        return view('home', compact('bookings'));
+    }
+
+    public function store(Request $request)
+    {
+        dd($request);
+    }
+
+    public function update(Booking $booking, Request $request)
+    {
+        dd($request);
+    }
+
+    public function destroy(Request $request)
+    {
+        dd($request);
     }
 }
