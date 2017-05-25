@@ -76,7 +76,7 @@
 
     @yield('content')
     <hr>    
-    <<footer>
+    <footer>
         <center>&copy 2017 Gulu University Alumni Students</center>
     </footer>
 
