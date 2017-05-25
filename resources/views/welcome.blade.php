@@ -5,7 +5,9 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
         	<div class="row">
-        		<div class="col-md-8"></div>
+        		<div class="col-md-8">
+        			<img src="img/homelandbus.JPG" alt="bus" class="img img-responsive img-rounded">
+        		</div>
         		<div class="col-md-4">
         			<h3>Welcome to TicketMyBus</h3>
 		            <div class="heading-to-margin">
