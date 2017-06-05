@@ -16,9 +16,9 @@
                             <p>Seat Number: {{ $approved->seat_number }}</p>
                         </div>
                         <div class="col-xs-2">
-                            <form method="POST" action="/api/v1/booking/{{ $approved->id }}" class="pull-right">
+                            <form method="POST" action="/api/v1/booking/{{$approved->id}}" class="pull-right">
                                 {{ csrf_field() }}
-                                {{ method_field('PUT') }}
+                                {{ method_field('DELETE') }}
                                 <input type="hidden" name="is_approves" value="0">
                                 <button type="submit" class="btn btn-danger">Cancel Booking</button>
                             </form>

@@ -22,7 +22,7 @@ class ApproveController extends Controller
 
     public function index()
     {
-        $approvings = Booking::where('is_approved', 1)->get();
+        $approvings = Booking::where('is_approved', 0)->get();
         return view('approve', compact('approvings'));
     }
 }

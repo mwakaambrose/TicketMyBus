@@ -41,6 +41,7 @@ class BookingApiController extends Controller
         if (!$booking->delete()) {
             $status = 'failed';
         }
-        return $status;
+        $approvings = Booking::where('is_approved', 1)->get();
+        return view('approve', compact('approvings'));
     }
 }
