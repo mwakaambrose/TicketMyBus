@@ -77,7 +77,7 @@
     @yield('content')
     <hr class="footer">    
     <footer>
-        <center>&copy 2017 Gulu University Alumni Students</center>
+        <center>&copy 2017 Mobile Bus Ticket Booking system</center>
     </footer>
 
     <!-- JavaScripts -->
