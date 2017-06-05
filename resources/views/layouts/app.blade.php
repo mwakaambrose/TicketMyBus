@@ -48,7 +48,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <strong>TicketMyBus</strong>
+                    <strong>Mobile Bus Ticket Booking system</strong>
                 </a>
             </div>
 
