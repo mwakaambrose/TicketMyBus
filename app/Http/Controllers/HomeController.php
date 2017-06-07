@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $bookings = Booking::where('is_approved', 0)->get();
+        $bookings = Booking::where('is_approved', 1)->get();
         return view('home', compact('bookings'));
     }
 
