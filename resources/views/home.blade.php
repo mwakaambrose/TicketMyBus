@@ -12,8 +12,8 @@
                             <h3><strong>{{ $booking->name }}</strong></h3>
                             <h6><strong>Tel: {{ $booking->phone_number }}</strong></h6>
                             <p>Travel: {{ $booking->to_from }}</p>
-                            <p>Time: {{ $booking->departure_time }}</p>
-                            <p>Booking Date: {{ $booking->created_at }}</p>
+                            <p>Departure Time: {{ $booking->created_at }}</p>
+                            <p>Booked: {{ $booking->created_at->diffForHumans() }}</p>
                         </div>
                         {{-- <div class="col-xs-2">
                             <form method="POST" action="/api/v1/booking/{{ $booking->id }}" class="pull-right">

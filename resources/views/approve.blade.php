@@ -12,7 +12,7 @@
                             <h3><strong>{{ $approved->name }}</strong></h3>
                             <h6><strong>{{ $approved->phone_number }}</strong></h6>
                             <p>{{ $approved->to_from }}</p>
-                            <p>{{ $approved->departure_time }}</p>
+                            <p>{{ $approved->created_at }}</p>
                             <p>Seat Number: {{ $approved->seat_number }}</p>
                         </div>
                         <div class="col-xs-2">
