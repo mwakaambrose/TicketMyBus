@@ -22,7 +22,7 @@ class CancelApiController extends Controller
         if (!$booking->delete()) {
         }
         return Booking::where('is_approved', 1)
-        				->where('phone_number', $request->phone_number)
+        				->where('phone_number', 'LIKE', '%'.trim($request->phone_number).'%')
         				->get();
     }
 }
