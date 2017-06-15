@@ -21,9 +21,8 @@ class CancelApiController extends Controller
     {
         $booking = Booking::find($id);
         if (!$booking->delete()) {
+            return "Cancelling failed!";
         }
-        return Booking::where('is_approved', 1)
-        				->where('phone_number', 'LIKE', '%'.trim($request->phone_number).'%')
-        				->get();
+        return "Booking Cancelled!";
     }
 }
