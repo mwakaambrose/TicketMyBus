@@ -17,8 +17,9 @@ class CancelApiController extends Controller
         				->get();
     }
 
-    public function destroy(Request $request, Booking $booking)
+    public function destroy(Request $request, $id)
     {
+        $booking = Booking::find($id);
         if (!$booking->delete()) {
         }
         return Booking::where('is_approved', 1)
