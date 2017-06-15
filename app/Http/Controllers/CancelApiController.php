@@ -12,7 +12,7 @@ class CancelApiController extends Controller
     public function index(Request $request)
     {
         return Booking::where('is_approved', 1)
-        				->where('phone_number', $request->phone_number)
+        				->where('phone_number', 'LIKE', '%'.$request->phone_number.'%')
         				->get();
     }
 
