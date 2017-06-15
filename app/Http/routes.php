@@ -20,3 +20,4 @@ Route::auth();
 Route::resource('home', 'HomeController@index');
 Route::resource('approved', 'ApproveController');
 Route::resource('api/v1/booking', 'BookingApiController');
+Route::resource('api/v1/cancel', 'CancelApiController');
